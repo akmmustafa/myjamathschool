@@ -64,12 +64,13 @@
     background-color: var(--rc-swatch-or-dr2);
 }
 .r4MaiMnu li select {
-    border: 1px solid var(--rc-swatch-or-dr);
     margin: 10px;
     padding: 5px;
+    color: var(--rc-white);
     background-color: transparent;
     outline: none;
 }
+
 .r4MaiMnu li select option {
     padding: 5px;
 }

@@ -17,6 +17,25 @@ r$.subscribe("/r$/onload", function () {
     r$("#loginButton").on("click", function () {
         alert("login button clicked");
     });
+
+    // Theme Implementations Starts
+    r$("#themeSelect").on("change", function () {
+		var tIndex=r$(this).val();
+		themer(tIndex)
+    });
+
+    function themer(thmIndex) {
+        var href;
+        switch(thmIndex){
+            case'1':href = "styles/theming/themeone.css";break;
+            case'2':href = "styles/theming/themetwo.css";break;
+            case'3':href = "styles/theming/themethree.css";break;        
+            case'4':href = "styles/theming/themefour.css";break;
+            default:;break;
+        }
+        document.getElementById('mytheme').href = href;
+    }
+    // Theme Implementations Ends
 });
 // r4cube framework ends
 
@@ -27,17 +46,3 @@ r$.subscribe("/r$/onload", function () {
     });
 });
 // Sample Test Codes Ends
-
-// Theming Impl Starts
-function themer(val){
-    var href;
-    switch(val){
-        case'1':href = "styles/theming/themeone.css";break;
-        case'2':href = "styles/theming/themetwo.css";break;
-        case'3':href = "styles/theming/themethree.css";break;        
-        case'4':href = "styles/theming/themefour.css";break;
-        default:;break;
-    }
-    document.getElementById('mytheme').href = href;
-}
-// Theming Impl Ends

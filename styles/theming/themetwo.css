@@ -11,6 +11,19 @@
     background-color: hsl(var(--r4-thm-purple), 39%, 50%);
 }
 
+.r4MaiMnu li select {
+    border: 1px solid hsl(var(--r4-thm-purple), 39%, 50%);
+}
+
+.r4MaiMnu li select option {
+    color: hsl(var(--r4-thm-purple), 39%, 50%);
+}
+
+.r4MaiMnu li select option:disabled {
+    color: var(--rc-grey-dr2);
+    background-color: var(--rc-grey-dr);
+}
+
 .r4Lnk, .r4Lnk:hover {
     color: hsl(var(--r4-thm-purple), 39%, 50%);
 }
