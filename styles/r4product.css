@@ -1,0 +1,110 @@
+/* =============================== */
+/* product page starts */
+/* =============================== */
+.r4PrdBox {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.r4PrdItm {    
+    border-radius: 3px;    
+    border: 1px solid var(--rc-grey-mid);
+    -webkit-box-shadow: 0px 4px 6px -3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 4px 6px -3px rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 6px -3px rgba(0,0,0,0.2);
+    margin-bottom: 1rem;
+}
+
+.r4PrdHdr {
+    padding: 10px;
+    background-color: var(--rc-grey-dr); 
+    color: var(--rc-white); 
+    font-size: 18px; 
+    line-height: 1;
+    text-transform: capitalize; 
+    text-align: center;
+    border-radius: 3px 3px 0 0;
+}
+
+.r4RedBgd {
+    background-color: hsl(var(--r4-thm-red), 75%, 62%);
+}
+
+.r4GrnBgd {
+    background-color: hsl(var(--r4-thm-green), 48%, 55%);
+}
+
+.r4BluBgd {
+    background-color: hsl(var(--r4-thm-blue), 89%, 46%);
+}
+
+.r4PrdBdy {
+    padding: 10px;
+    border-radius: 0 0 3px 3px;
+}
+
+.r4RteBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    line-height: normal;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--rc-grey-mid);
+    margin-bottom: 1rem;
+}
+.r4RteBox .dlr {
+    display: flex;
+    align-self: flex-start;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.r4RteBox .nbr {
+    display: flex;
+    font-size: 32px;
+    font-weight: bold;;
+}
+.r4RteBox .ped {
+    display: flex;    
+    align-self: flex-end;
+}
+
+.r4SptBox {
+    position: relative;
+    padding: 0 1rem;
+    margin-bottom: 10px;
+}
+.r4SptBox .hed {
+    position: relative;
+    text-transform: capitalize;
+    color: var(--rc-grey-dr);
+    font-size: 16px;
+}
+.r4SptBox .hed::before {
+    content: '\2714';
+    color: hsl(var(--r4-thm-blue), 89%, 46%);
+}
+.r4SptBox .inf {
+    color: var(--rc-grey-dr2);
+    line-height: normal;
+    font-size: 12px;
+}
+
+.r4ChsPln {
+    margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+    .r4PrdBox {
+        flex-direction: row;
+    }
+    .r4PrdItm { 
+        width: 31.33%;
+        margin: 0 1%;
+    }
+}
+
+/* =============================== */
+/* product page ends */
+/* =============================== */

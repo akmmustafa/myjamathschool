@@ -39,7 +39,8 @@
     --rc-black-lt: #333333;
     --rc-black: #000000;
 
-    --rc-font-sanserif: Helvetica, Arial, sans-serif;
+    --rc-font-sanserif: 'robotoregular', Helvetica, Arial, sans-serif;
+    /* --rc-font-sanserif: 'robotothin', Helvetica, Arial, sans-serif; */
     --rc-font-serif: "Times New Roman", Times, serif;
     --rc-font-monospace: "Lucida Console","Courier New"; 
 
